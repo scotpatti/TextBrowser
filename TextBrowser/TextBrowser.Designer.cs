@@ -1,6 +1,6 @@
 ﻿namespace TextBrowser
 {
-    partial class Form1
+    partial class TextBrowser
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbUrl.Location = new System.Drawing.Point(12, 12);
             this.tbUrl.Name = "tbUrl";
-            this.tbUrl.Size = new System.Drawing.Size(631, 20);
+            this.tbUrl.Size = new System.Drawing.Size(817, 20);
             this.tbUrl.TabIndex = 0;
             this.tbUrl.Text = "http://www.google.com/";
             // 
@@ -51,13 +51,14 @@
             this.tbWebView.Location = new System.Drawing.Point(12, 38);
             this.tbWebView.Multiline = true;
             this.tbWebView.Name = "tbWebView";
-            this.tbWebView.Size = new System.Drawing.Size(712, 351);
+            this.tbWebView.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tbWebView.Size = new System.Drawing.Size(898, 642);
             this.tbWebView.TabIndex = 1;
             // 
             // btGo
             // 
             this.btGo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btGo.Location = new System.Drawing.Point(649, 12);
+            this.btGo.Location = new System.Drawing.Point(835, 12);
             this.btGo.Name = "btGo";
             this.btGo.Size = new System.Drawing.Size(75, 23);
             this.btGo.TabIndex = 2;
@@ -65,16 +66,16 @@
             this.btGo.UseVisualStyleBackColor = true;
             this.btGo.Click += new System.EventHandler(this.btGo_Click);
             // 
-            // Form1
+            // TextBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 401);
+            this.ClientSize = new System.Drawing.Size(922, 692);
             this.Controls.Add(this.btGo);
             this.Controls.Add(this.tbWebView);
             this.Controls.Add(this.tbUrl);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "TextBrowser";
+            this.Text = "TextBrowser";
             this.ResumeLayout(false);
             this.PerformLayout();
 
