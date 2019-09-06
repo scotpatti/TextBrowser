@@ -14,7 +14,7 @@ namespace TextBrowser
         private void btGo_Click(object sender, EventArgs e)
         {
             var url = tbUrl.Text;
-            tbWebView.Text += GetResponse(url);
+            tbWebView.Text = GetResponse(url);
         }
 
         private string GetResponse(string url)

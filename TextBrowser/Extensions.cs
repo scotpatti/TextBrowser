@@ -13,6 +13,7 @@ namespace TextBrowser
             {
                 byte[] buffer = ASCIIEncoding.ASCII.GetBytes(data);
                 stream.Write(buffer, 0, buffer.Length);
+                stream.Flush();
             }
             catch (Exception)
             {
@@ -32,7 +33,7 @@ namespace TextBrowser
                 {
                     stream.Read(buffer, 0, buffer.Length);
                     sb.Append(ASCIIEncoding.ASCII.GetString(buffer));
-                } while (!stream.DataAvailable);
+                } while (stream.DataAvailable);
             }
             catch (Exception)
             {
